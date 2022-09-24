@@ -26,8 +26,6 @@ $ pwd
 /home/[user]
 ```
 
-<div style="border-botton: 1px solid;"></div>
-
 ### cd
 - change directory
 
@@ -66,13 +64,13 @@ $ clear
 
 ## 2. Manipulation
 
-|Command|Results|
+|manipulation|Results|
 |:--:|:--|
 |[cp](#cp)|copy files and directories|
 |[mv](#mv)|move files and directories and rename them|
 |[rm](#rm)|delete files and directories|
 |[mkdir](#mkdir)|make a new directories|
-
+|[wildcards](#wildcards)|Special characters that allow you to quickly specify file name groups|
 ### cp
 - copy files and directories
 
@@ -140,3 +138,28 @@ ex)
 $ mkdir directory...
 ```
 
+### wildcards
+- Special characters that allow you to quickly specify file name groups
+
+|Pattern|Matches|
+|:--|:--|
+|*|All file names|
+|g*|All file names that begin with the character "g"|
+|b*.txt|All file names that begin with the character "b" and end with the characters ".txt"|
+|data???|Any file name that begins with the characters "Data" followed by exactly 3 more characters|
+
+Using examples of ***wildcard***
+
+|Command|Results|
+|:--|:--|
+|cp *.txt text_files|Copy all files in the current working directory with names ending with the characters ".txt" to an existing directory named text_files.|
+|mv dir1 ../*.bak dir2|Move the subdirectory dir1 and all the files ending in ".bak" in the current working directory's parent directory to an existing directory named dir2.|
+|rm *~|Delete all files in the current working directory that end with the character "~". Some applications create backup files using this naming scheme. Using this command will clean them out of a directory.|
+
+## 3. Help command
+
+|command|Using example|
+|:--:|:--|
+|help|$ help cd|
+|man|$ man cp|
+|exit|$ exit|
