@@ -1,4 +1,4 @@
-# ✨ Shell commands
+# ✨ Shell comman ds
 
 ## Contents
 
