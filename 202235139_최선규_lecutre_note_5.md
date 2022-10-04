@@ -22,26 +22,64 @@
 - Command “cat” displays the content of a text file.
 - Using “>>” appends output to an extising file (if it already exitsts), or create and write to a new file if it doesn’t exist.
 
+ex)
+```sh
+$ ls -lh > file_list.txt
+$ cat file_list.txt
+```
+```sh
+$ ls -lh >> file_list.txt
+$ cat file_list.txt
+```
+
 
 ### Standard Input
 - By default, standard input is from keyboard.
 - You can redirecct input from a file using “<”.
 - You can mix “<“ and “>” together in a single line.
 
+```sh
+$ cat word.txt
+school
+class
+home
+new
+lecture
+$ sort < words.txt > sorted_words.txt
+$ cat sorted_words.txt
+class
+home
+lecture
+new
+school
+```
+
 
 ### Pipelines "|"
 - Pipeline feeds output of previous command to input of next command.
 - command1 | command2 | command3 | … 
 
+ex )
+```sh
+$ ls -lh | less
+```
+
+
 ### Tip: Backslach
 - Backslah can be used to ignore line change in command (“enter”), to enter a long command in multiple lines.
 
+ex )
+```sh
+$ ls -l \
+> --reverse \
+> --human-readable \
+```
 
 ## 2. Premissions
 |Part|Comment|
 |:--|:--|
-|Permissions|Files and directories have a permission assigned differently to owner / group / other in linux system.|
-|Changing Permissions|“chmod” changes permissions.|
+|[Permissions](#premissions)|Files and directories have a permission assigned differently to owner / group / other in linux system.|
+|[Changing Permissions](#changing-permissions)|“chmod” changes permissions.|
 
 ### Premissions
 - Linux is a multi-user system.
