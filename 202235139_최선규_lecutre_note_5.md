@@ -85,6 +85,12 @@ $ ls -l \
 - Linux is a multi-user system.
 - Files and directories have a permission assigned differently to owner / group / others.
 
+ex )
+```sh
+$ ls -l /bin/bash
+-rwxr-xr-x l root root 1113504 Jun 6 2019 /bin/bash
+```
+
 ### Changing Permissions
 - “chmod” changes permissions. 
 - Change the permission of a file “word.txt” that only the owner (you) can read and write, but all the others (including others in the group) can only read it. No execution is needed for all users.
@@ -95,6 +101,10 @@ $ ls -l \
 - Some commands need superuser’s privilleges.
 - Put “sudo” before the command if you are a superuser.
 
+ex )
+```sh
+$ sudo some_command
+```
 
 
 ## 4. Text Editor and Shell Script
@@ -121,3 +131,9 @@ ex )
 
 ### Tip: History
 - Type “history” to see previous command history. Or, save it to a text file.
+
+ex )
+```sh
+$ history > history_command.txt
+$ cat history
+```
