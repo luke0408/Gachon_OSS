@@ -130,7 +130,7 @@ ex )
 - Write and run a shell script
 
 ### Tip: History
-- Type “history” to see previous command history. Or, save it to a text file.
+- Type “history” to see previous command history.  Or, save it to a text file.
 
 ex )
 ```sh
